@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8F8F8;
+}
+
+header {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 70px;
+    color: #2B2B2B;
+}
+
+h3 {
+    font-size: 35px;
+    color: #2B2B2B;
+}
+
+main p {
+    font-size: 22px;
+    color: #2B2B2B;
+}
+
+img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+article {
+    background-color: #E8E8E8;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+article h3 {
+    font-size: 35px;
+    margin-top: 20px;
+    color: #2B2B2B;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+main {
+    margin: 20px;
+}
+
+footer {
+    background-color: #2B2B2B;
+    color: #E8E8E8;
+    padding: 20px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 20px; /* Ajusté pour un meilleur alignement */
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+li {
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #2B2B2B;
+}
+
+a:hover {
+    font-style: italic;
+}
+
+footer a {
+    color: #E8E8E8;
+    font-size: 70px;
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        margin: 100px;
+    }
+
+    header {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 200px;
+    }
+
+    header p {
+        font-size: 25px;
+    }
+
+    section {
+        display: flex;
+        gap: 10px;
+    }
+
+    article {
+        width: 35%;
+    }
+
+    article h3 {
+        font-size: 2vw;
+    }
+
+    footer {
+        padding: 100px;
+    }
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(12px); /* Décalage initial vers le bas */
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.animation {
+    animation: slide 0.4s ease-out;
+}
+
+.animation2 {
+    animation: slide 0.6s ease-out;
+}
